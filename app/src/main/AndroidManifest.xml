@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geartocare.ManageMechanicP">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/g2cicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/g2cicon_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.BookingPartsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.EditServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.SmsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.ServiceEditActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.PartRecordsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.PartListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.BookingsSlotListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.BookingListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.SkipDaysActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.CreatePackageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.TwsModelsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.TwsCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.TwsPricingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.TwsCheckListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.EditTwsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.ManageServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.ManagePackageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.ManageSlotActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.ManageCouponActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.ManageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.CustomerVehicleActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.CheckManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.SelectLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.PlacePickerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.GenerateImageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.EditMechanicDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.EditCustomerDetails"
+            android:exported="true" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.ImageViewerActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.ServiceImagesActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.ServiceAssignedActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.ServiceApprovalActivity"
+            android:exported="true" />
+        <activity android:name="com.geartocare.ManageMechanicP.Activities.ListAssignMechanicActivity" />
+        <activity android:name="com.geartocare.ManageMechanicP.Activities.ListMechanicActivity" />
+        <activity android:name="com.geartocare.ManageMechanicP.Activities.MechanicDisplayActivity" />
+        <activity android:name="com.geartocare.ManageMechanicP.Activities.MechanicRegisterActivity" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.MechanicActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.geartocare.ManageMechanicP.Activities.BookingDetailActivity" />
+        <activity android:name="com.geartocare.ManageMechanicP.Activities.BookingServicesActivity" />
+        <activity android:name="com.geartocare.ManageMechanicP.Activities.ListServiceActivity" />
+        <activity android:name="com.geartocare.ManageMechanicP.Activities.CustomerRegisterActivity" />
+        <activity android:name="com.geartocare.ManageMechanicP.Activities.CustomerServiceActivity" />
+        <activity android:name="com.geartocare.ManageMechanicP.Activities.CustomerDisplayActivity" />
+        <activity android:name="com.geartocare.ManageMechanicP.Activities.ListCustomerActivity">
+            android:screenOrientation="portrait"
+        </activity>
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.resetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.VerifyPhoneNo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.CustomerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.StartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.geartocare.ManageMechanicP.Activities.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service
+            android:name="com.geartocare.ManageMechanicP.Notifications.FirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

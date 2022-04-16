@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Name"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/black"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:id="@+id/name"/>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Company"
+
+        app:backgroundTint="@color/black"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:layout_marginTop="10dp"
+        android:id="@+id/company"/>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Original Price"
+        android:inputType="number"
+        app:backgroundTint="@color/black"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:layout_marginTop="10dp"
+        android:id="@+id/op"/>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Selling Price"
+        android:inputType="number"
+        app:backgroundTint="@color/black"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:layout_marginTop="10dp"
+        android:id="@+id/sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="16sp"
+            android:text="Discount"
+            android:textColor="@color/grey" />
+
+
+        <TextView
+            android:id="@+id/partDis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="right"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/add"
+        android:textAllCaps="false"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
+
+
+
+</LinearLayout>

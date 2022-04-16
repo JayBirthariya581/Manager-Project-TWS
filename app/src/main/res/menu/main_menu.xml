@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <item android:title="Manage">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_ninja"
+                    android:title="Customer"
+                    android:icon="@drawable/ic_customer"/>
+
+                <item
+                    android:id="@+id/nav_Mechanic"
+                    android:title="Mechanic"
+                    android:icon="@drawable/ic_mechanic"/>
+
+                <item
+                    android:id="@+id/nav_Manage"
+                    android:title="Manage"
+                    android:icon="@drawable/manage_icon"/>
+
+
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+        <item android:title="Profile">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="Login"
+                    android:icon="@drawable/ic_login"/>
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Profile"
+                    android:icon="@drawable/ic_profile"/>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout"
+                    android:icon="@drawable/ic_logout"/>
+                </group>
+            </menu>
+
+        </item>
+
+
+
+
+
+
+</menu>

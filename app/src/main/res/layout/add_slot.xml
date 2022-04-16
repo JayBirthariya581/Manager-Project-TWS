@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/slotMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="2dp"
+        android:layout_toStartOf="@id/rup"
+        android:fontFamily="@font/poppins_medium"
+        android:text="* Time should be in 24hrs clock. *"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="2dp"
+        android:layout_toStartOf="@id/rup"
+        android:fontFamily="@font/poppins_light"
+        android:text="-  Ex. for 8 Pm enter 20(i.e 8+12).  -"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/slotTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Time"
+        android:inputType="number"
+        android:textCursorDrawable="@drawable/color_cursor"
+        app:backgroundTint="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="Add Slot"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
