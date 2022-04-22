@@ -130,7 +130,8 @@
 
 
                     <com.google.android.material.textfield.TextInputEditText
-
+                        android:textAllCaps="true"
+                        android:inputType="textCapCharacters"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:singleLine="true" />
@@ -152,7 +153,8 @@
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
+                        android:textAllCaps="true"
+                        android:inputType="textCapCharacters"
                         android:singleLine="true" />
 
                 </com.google.android.material.textfield.TextInputLayout>

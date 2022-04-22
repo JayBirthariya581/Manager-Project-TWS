@@ -123,6 +123,39 @@
         
         
         <RelativeLayout
+            android:id="@+id/p_box"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+
+                android:src="@drawable/ic_rupee"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/paymentPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Cost"
+                android:layout_toEndOf="@id/p"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="20dp" />
+            
+            
+            
+        </RelativeLayout>
+
+
+        <RelativeLayout
             android:id="@+id/pt_box"
             android:layout_width="match_parent"
             android:layout_margin="5dp"
@@ -149,9 +182,9 @@
                 android:textColor="@color/black"
                 android:visibility="gone"
                 android:textSize="20dp" />
-            
-            
-            
+
+
+
         </RelativeLayout>
 
 

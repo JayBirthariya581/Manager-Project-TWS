@@ -57,6 +57,10 @@ public class CustomerRegisterActivity extends AppCompatActivity {
                     progressDialog.dismiss();
                     Toast.makeText(CustomerRegisterActivity.this, "Fields cannot be empty", Toast.LENGTH_SHORT).show();
                     return;
+                } else if (phoneL.getEditText().getText().toString().length() != 10) {
+                    progressDialog.dismiss();
+                    Toast.makeText(CustomerRegisterActivity.this, "Phone no. should of 10 digits", Toast.LENGTH_SHORT).show();
+                    return;
                 } else {
                     progressDialog.show();
 

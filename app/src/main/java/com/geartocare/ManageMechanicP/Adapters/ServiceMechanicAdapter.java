@@ -52,7 +52,7 @@ public class ServiceMechanicAdapter extends RecyclerView.Adapter<ServiceMechanic
 
     String vhNo;
     ModelBooking bookingDetails;
-    ActivityResultLauncher launcher,launcher2;
+    ActivityResultLauncher launcher, launcher2;
     CustomProgressDialog progressDialog;
 
     public String getVhNo() {
@@ -114,8 +114,8 @@ public class ServiceMechanicAdapter extends RecyclerView.Adapter<ServiceMechanic
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd_MM_yyyy");
         String date_txt = sdf.format(Long.valueOf(m.getDate()));
-        String[] time_arr = m .getTime().split(" ")[0].split(":");
-        String time_ = time_arr[0]+"_"+time_arr[1];
+        String[] time_arr = m.getTime().split(" ")[0].split(":");
+        String time_ = time_arr[0] + "_" + time_arr[1];
         holder.date.setText(date_txt);
         holder.time.setText(m.getTime());
         holder.vehicleNo.setText(vhNo);
@@ -218,8 +218,11 @@ public class ServiceMechanicAdapter extends RecyclerView.Adapter<ServiceMechanic
             holder.approve.setVisibility(View.VISIBLE);
             holder.generatePdf.setVisibility(View.VISIBLE);
             holder.pt_box.setVisibility(View.VISIBLE);
+            holder.p_box.setVisibility(View.VISIBLE);
             holder.paymentType.setVisibility(View.VISIBLE);
-            holder.paymentType.setText("Payment type : "+m.getPayment().getPaymentType());
+            holder.paymentPrice.setVisibility(View.VISIBLE);
+            holder.paymentType.setText("Payment type : " + m.getPayment().getPaymentType());
+            holder.paymentPrice.setText("Cost : " + m.getPayment().getPrice());
             holder.parts.setVisibility(View.VISIBLE);
 
 
@@ -358,7 +361,6 @@ public class ServiceMechanicAdapter extends RecyclerView.Adapter<ServiceMechanic
                     intent.putExtra("serviceDetails", bookingDetails);
 
 
-
                     context.startActivity(intent);
                 }
             });
@@ -398,7 +400,7 @@ public class ServiceMechanicAdapter extends RecyclerView.Adapter<ServiceMechanic
                         @Override
                         public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
 
-                            if(snapshot.exists()){
+                            if (snapshot.exists()) {
                                 View vi = LayoutInflater.from(context).inflate(R.layout.assigned_service_edit, null);
                                 AssignedServiceEditBinding binding = AssignedServiceEditBinding.bind(vi);
                                 AlertDialog builder = new AlertDialog.Builder(context).create();
@@ -481,7 +483,6 @@ public class ServiceMechanicAdapter extends RecyclerView.Adapter<ServiceMechanic
                             }
 
 
-
                         }
 
                         @Override
@@ -508,9 +509,9 @@ public class ServiceMechanicAdapter extends RecyclerView.Adapter<ServiceMechanic
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView date, time, vehicleNo, address, ServiceStatus,paymentType;
+        TextView date, time, vehicleNo, address, ServiceStatus, paymentType,paymentPrice;
         Button assignMechanic, images, approve, generatePdf;
-        RelativeLayout pt_box;
+        RelativeLayout pt_box,p_box;
         MaterialCardView parts;
 
 
@@ -528,6 +529,8 @@ public class ServiceMechanicAdapter extends RecyclerView.Adapter<ServiceMechanic
             approve = itemView.findViewById(R.id.cardMechanic_approve_btn);
             generatePdf = itemView.findViewById(R.id.cardMechanic_gen_pdf);
             pt_box = itemView.findViewById(R.id.pt_box);
+            p_box = itemView.findViewById(R.id.p_box);
+            paymentPrice = itemView.findViewById(R.id.paymentPrice);
             paymentType = itemView.findViewById(R.id.payment_type);
             parts = itemView.findViewById(R.id.parts);
         }
