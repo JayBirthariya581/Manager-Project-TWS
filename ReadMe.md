@@ -1,9 +1,7 @@
 
-# Manager App
+# Management Application
 
-This is a prototype of Manager side Android App  (part of Project ManageMechanicProto created under GearToCare Startup)
-used for creating and managing doorstep two wheeler services.
-
+This is a management application for the Two-Wheeler Doorstep Servicing Project. Here are the main features of the application:
 
 
 ## Features
