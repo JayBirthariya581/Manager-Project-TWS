@@ -51,5 +51,5 @@ Now mechanic can reach to that exact location by using this latitude and longitu
 
 
 # Developers
-Jay Birthariya - Manager APP<br/>
+Jay Birthariya
  
