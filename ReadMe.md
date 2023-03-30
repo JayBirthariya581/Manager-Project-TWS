@@ -50,6 +50,6 @@ Now mechanic can reach to that exact location by using this latitude and longitu
 
 
 
-# Developers
+# Developer
 Jay Birthariya
  
